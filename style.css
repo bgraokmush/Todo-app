@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 80%;
+    margin:  0 auto;
+    min-height: 100vh;
+}
+/*title area*/
+.container{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 32px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.todo-title{
+    font-size: 2.5rem;
+}
+.todo-div{
+    display: flex;
+    margin-top: 16px;
+}
+.todo-input{
+    font-size: 0.9rem;
+    padding: 6px 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+}
+.todo-btn{
+    font-size: 0.9rem;
+    padding: 6px 7px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.todo-btn:hover{
+    background-color:rgb(172, 189, 204);
+}
+
+/*todo area*/
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    margin-top: 16px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.todo-left{
+    display: flex;
+    align-items: center;
+}
+.todo-del{
+    font-size: 0.9rem;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: burlywood;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.todo-del:hover{
+    background-color: rgb(177,142,97);
+}
+.todo-text{
+    margin-left: 8px;
+}
+
+.todo-cb:checked ~ .todo-text{
+    text-decoration: line-through;
+    color: gray;
+}
+
+/*alert area*/
+.alert{
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 45px;
+    margin-top: 16px;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease all;
+}
+
+.alert-success{
+    background-color:darkseagreen;
+}
+.alert-danger{
+    background-color:rgb(255, 70, 107);
+}
